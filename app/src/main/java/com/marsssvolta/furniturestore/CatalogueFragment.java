@@ -17,13 +17,13 @@ public class CatalogueFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        RecyclerView catalogueRecycler = (RecyclerView) inflater.inflate(R.layout.fragment_catalogue, container, false);
-        CatalogueAdapter adapter = new CatalogueAdapter(catalogueRecycler.getContext());
-        catalogueRecycler.setAdapter(adapter);
-        catalogueRecycler.setHasFixedSize(true);
-        catalogueRecycler.setLayoutManager(new GridLayoutManager(getActivity(), 2));
+        RecyclerView recyclerView = (RecyclerView) inflater.inflate(R.layout.recycler_view, container, false);
+        CatalogueAdapter adapter = new CatalogueAdapter(recyclerView.getContext());
+        recyclerView.setAdapter(adapter);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 2));
 
-        return catalogueRecycler;
+        return recyclerView;
     }
 
     private class CatalogueHolder extends RecyclerView.ViewHolder {

@@ -5,4 +5,10 @@
         <item>Тумбочка</item>
         <item>Диван</item>
     </string-array>
+
+    <string-array name="addresses">
+        <item>Улица Гагарина, дом 52</item>
+        <item>Улица Мяги, дом 19</item>
+        <item>Улица Арцибушевская, дом 41</item>
+    </string-array>
 </resources>
