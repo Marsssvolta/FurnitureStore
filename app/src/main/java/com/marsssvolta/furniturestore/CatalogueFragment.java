@@ -37,7 +37,7 @@ public class CatalogueFragment extends Fragment {
         CatalogueHolder(LayoutInflater inflater, ViewGroup parent) {
             super(inflater.inflate(R.layout.item_card, parent, false));
 
-            mName = itemView.findViewById(R.id.info_text);
+            mName = itemView.findViewById(R.id.card_text);
             mPicture = itemView.findViewById(R.id.card_image);
         }
     }

@@ -4,8 +4,4 @@
     <string name="store_tab">Магазин</string>
     <string name="catalogue_tab">Каталог</string>
     <string name="addresses_tab">Адреса</string>
-
-    <string name="table">Стол</string>
-    <string name="nightstand">Тумбочка</string>
-    <string name="sofa">Диван</string>
 </resources>
