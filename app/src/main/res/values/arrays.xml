@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="names">
-        <item>Стол</item>
+        <item>Белый стол</item>
+        <item>Розовый стол</item>
+        <item>Часы и стол</item>
         <item>Тумбочка</item>
+        <item>Открытая тумбочка</item>
+        <item>Африканская тумбочка</item>
         <item>Диван</item>
     </string-array>
 
@@ -11,4 +15,14 @@
         <item>Улица Мяги, дом 19</item>
         <item>Улица Арцибушевская, дом 41</item>
     </string-array>
+
+    <array name="catalog_pictures">
+        <item>@drawable/white_table</item>
+        <item>@drawable/pink_table</item>
+        <item>@drawable/clock_and_table</item>
+        <item>@drawable/nightstand</item>
+        <item>@drawable/open_nightstand</item>
+        <item>@drawable/african_nightstand</item>
+        <item>@drawable/sofa</item>
+    </array>
 </resources>
