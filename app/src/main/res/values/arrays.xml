@@ -11,9 +11,9 @@
     </string-array>
 
     <string-array name="addresses">
-        <item>Улица Гагарина, дом 52</item>
-        <item>Улица Мяги, дом 19</item>
-        <item>Улица Арцибушевская, дом 41</item>
+        <item>Город Самара, улица Гагарина, дом 52</item>
+        <item>Город Самара, улица Мяги, дом 19</item>
+        <item>Город Самара, улица Арцибушевская, дом 41</item>
     </string-array>
 
     <array name="catalog_pictures">

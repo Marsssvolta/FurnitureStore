@@ -5,12 +5,15 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import static android.support.v7.widget.OrientationHelper.VERTICAL;
 
 public class AddressesFragment extends Fragment {
 
@@ -22,6 +25,10 @@ public class AddressesFragment extends Fragment {
         recyclerView.setAdapter(adapter);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+        // Подчёркивание пунктов списка
+        DividerItemDecoration itemDecor = new DividerItemDecoration(getContext(), VERTICAL);
+        recyclerView.addItemDecoration(itemDecor);
 
         return recyclerView;
     }
