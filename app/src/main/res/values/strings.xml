@@ -4,4 +4,8 @@
     <string name="store_tab">Магазин</string>
     <string name="catalogue_tab">Каталог</string>
     <string name="addresses_tab">Адреса</string>
+
+    <string name="title_name">Мебельный магазин</string>
+    <string name="title_text">С 1998 года Дмитрий Агафонов производит
+        эксклюзивную мебель, руководствуясь пожеланиями своих клиентов.</string>
 </resources>
