@@ -36,11 +36,15 @@ public class AddressesFragment extends Fragment {
     private class AddressesHolder extends RecyclerView.ViewHolder {
 
         TextView mAddress;
+        TextView mSchedule;
+        TextView mPhone;
 
         AddressesHolder(LayoutInflater inflater, ViewGroup parent) {
             super(inflater.inflate(R.layout.item_list, parent, false));
 
             mAddress = itemView.findViewById(R.id.address);
+            mSchedule = itemView.findViewById(R.id.work_schedule);
+            mPhone = itemView.findViewById(R.id.phone);
         }
     }
 
@@ -49,10 +53,14 @@ public class AddressesFragment extends Fragment {
         private static final int LENGTH = 3;
 
         private final String[] mAddresses;
+        private final String mSchedules;
+        private final String[] mPhones;
 
         AddressesAdapter(Context context) {
             Resources resources = context.getResources();
             mAddresses = resources.getStringArray(R.array.addresses);
+            mSchedules = resources.getString(R.string.schedule);
+            mPhones = resources.getStringArray(R.array.phones);
         }
 
         @NonNull
@@ -64,6 +72,8 @@ public class AddressesFragment extends Fragment {
         @Override
         public void onBindViewHolder(@NonNull AddressesHolder holder, int position) {
             holder.mAddress.setText(mAddresses[position % mAddresses.length]);
+            holder.mSchedule.setText(mSchedules);
+            holder.mPhone.setText(mPhones[position % mPhones.length]);
         }
 
         @Override

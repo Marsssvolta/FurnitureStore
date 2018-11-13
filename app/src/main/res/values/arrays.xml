@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string-array name="names">
         <item>Белый стол</item>
         <item>Розовый стол</item>
@@ -14,6 +14,12 @@
         <item>Город Самара, улица Гагарина, дом 52</item>
         <item>Город Самара, улица Мяги, дом 19</item>
         <item>Город Самара, улица Арцибушевская, дом 41</item>
+    </string-array>
+
+    <string-array name="phones">
+        <item tools:ignore="TypographyDashes">Телефон: 0(000) 000-00-00</item>
+        <item tools:ignore="TypographyDashes">Телефон: 1(111) 111-11-11</item>
+        <item tools:ignore="TypographyDashes">Телефон: 2(222) 222-22-22</item>
     </string-array>
 
     <array name="catalog_pictures">
