@@ -1,6 +1,7 @@
 package com.marsssvolta.furniturestore;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
@@ -39,6 +40,16 @@ public class CatalogueFragment extends Fragment {
 
             mName = itemView.findViewById(R.id.card_text);
             mPicture = itemView.findViewById(R.id.card_image);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Context context = view.getContext();
+                    Intent intent = new Intent(context, DetailActivity.class);
+                    intent.putExtra(DetailActivity.EXTRA_POSITION, getAdapterPosition());
+                    context.startActivity(intent);
+                }
+            });
         }
     }
 
