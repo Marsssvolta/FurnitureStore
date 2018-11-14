@@ -46,6 +46,7 @@ public class CatalogueFragment extends Fragment {
                 public void onClick(View view) {
                     Context context = view.getContext();
                     Intent intent = new Intent(context, DetailActivity.class);
+                    // Передача номера пункта в активность детализации
                     intent.putExtra(DetailActivity.EXTRA_POSITION, getAdapterPosition());
                     context.startActivity(intent);
                 }
@@ -53,6 +54,7 @@ public class CatalogueFragment extends Fragment {
         }
     }
 
+    // Адаптер для отображения RecyclerView
     private class CatalogueAdapter extends RecyclerView.Adapter<CatalogueHolder> {
 
         private static final int LENGTH = 7;
@@ -60,6 +62,7 @@ public class CatalogueFragment extends Fragment {
         private final String[] mNames;
         private final Drawable[] mCatalogPictures;
 
+        // Установка ресурсов в конструкторе
         CatalogueAdapter(Context context) {
             Resources resources = context.getResources();
             mNames = resources.getStringArray(R.array.names);

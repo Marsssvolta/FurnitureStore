@@ -16,17 +16,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Добавление Toolbar на главный экран
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        // Прикрепление SectionsPagerAdapter к ViewPager
         SectionsPagerAdapter pagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
         ViewPager pager = findViewById(R.id.pager);
         pager.setAdapter(pagerAdapter);
 
+        // Прикрепление ViewPager к вкладкам TabLayout
         TabLayout tabLayout = (findViewById(R.id.tabs));
         tabLayout.setupWithViewPager(pager);
     }
 
+    // Добаление фрагментов во вкладки
     private class SectionsPagerAdapter extends FragmentPagerAdapter {
 
         SectionsPagerAdapter(FragmentManager fragmentManager) {

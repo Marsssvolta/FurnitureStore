@@ -23,9 +23,11 @@ public class DetailActivity extends AppCompatActivity {
 
         CollapsingToolbarLayout collapsingToolbar = findViewById(R.id.collapsing_toolbar);
 
+        // Получение номера пункта из интента
         int position = getIntent().getIntExtra(EXTRA_POSITION, 0);
         Resources resources = getResources();
 
+        // Установка данных
         String[] names = resources.getStringArray(R.array.names);
         collapsingToolbar.setTitle(names[position % names.length]);
 

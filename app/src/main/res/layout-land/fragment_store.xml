@@ -18,13 +18,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
-        android:layout_marginBottom="120dp"
+        android:layout_marginBottom="@dimen/bottom_land"
         android:orientation="vertical"
         android:paddingEnd="@dimen/padding"
         android:paddingStart="@dimen/padding"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp">
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:layout_width="match_parent"

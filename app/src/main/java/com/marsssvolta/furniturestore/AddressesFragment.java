@@ -48,6 +48,7 @@ public class AddressesFragment extends Fragment {
         }
     }
 
+    // Адаптер для отображения RecyclerView
     private class AddressesAdapter extends RecyclerView.Adapter<AddressesHolder> {
 
         private static final int LENGTH = 3;
@@ -56,6 +57,7 @@ public class AddressesFragment extends Fragment {
         private final String mSchedules;
         private final String[] mPhones;
 
+        // Установка ресурсов в конструкторе
         AddressesAdapter(Context context) {
             Resources resources = context.getResources();
             mAddresses = resources.getStringArray(R.array.addresses);
